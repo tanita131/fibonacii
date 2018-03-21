@@ -1,0 +1,468 @@
+body {
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background: black;
+}
+
+figure img {
+  width: 100%;
+  height: 700px;
+  opacity: .8;
+  filter: grayscale(20%);
+}
+
+#monstereyes {
+  font-size: 40px;
+}
+
+#title {
+  /*margin-left: 10px;*/
+  /*margin-top: 100px;*/
+  /*width: 1000px;*/
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90px;
+  color: black;
+  /*text-shadow:
+    0 1px 0 #fff, 0 4px 0 #fff,
+    0 -1px 0 #fff, 0 -4px 0 #fff,
+    1px 0 0 #fff, 4px 0 0 #fff,
+    -1px 0 0 #fff, -4px 0 0 #fff,
+    -10px 0 10px rgba(0,0,0,0.3),
+    0 10px 10px rgba(0,0,0,0.3);*/
+}
+
+.text .description {
+  font-family: 'Courgette', cursive;
+}
+
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: -390px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 700;
+  /*margin: 0;*/
+}
+
+.word {
+  position: absolute;
+  width: 520px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #FFC312;
+}
+
+.green {
+  color: #B53471;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+
+/****** ABOUT ******/
+
+.about-separator {
+  padding: 50px 0;
+  background-color: #c9e5d0;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.services {
+  position: relative;
+  margin-top: 70px;
+  overflow-x: hidden;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.services-container {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  background-color: hsla(345, 71%, 46%, 0.62);
+  font-family: 'Courgette', cursive;
+  padding: 50px 0;
+  /*margin-top: 50px;*/
+  text-align: center;
+  -webkit-clip-path: polygon(50% 19%, 100% 50%, 50% 86%, 0% 50%);
+  clip-path: polygon(50% 19%, 100% 50%, 50% 86%, 0% 50%);
+}
+
+.services-container h2 {
+  font-size: 60px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 1px 5px black;
+}
+
+.services figure img {
+  width: 100%;
+  overflow-x: hidden;
+  filter: grayscale(80%);
+  height: 300px;
+}
+
+.gallery-container {
+  background-color: #D3D3D3;
+  font-family: 'Courgette', cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.page-header {
+  border-bottom: 0;
+}
+
+.page-header h2 {
+  font-size: 60px;
+}
+
+
+/*******MENU********/
+
+.main .menu .titulo {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+  border: 3px solid #8A0829;
+  background: transparent;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.main .menu article {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.main .menu .categoria {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.main .menu .platillo {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 4px dotted #000;
+  overflow: hidden;
+}
+
+.main .menu .nombre {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.main .menu .precio {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.main .menu .descripcion {
+  font-size: 16px;
+  color: #676767;
+  clear: both;
+}
+
+
+/****** CONTACT *******/
+
+.contact {
+  padding: 30px 0;
+  background-color: #c9e5d0;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact h2 {
+  font-size: 60px;
+}
+
+.mapa {
+  margin-top: 50px;
+}
+
+
+/* ------- FOOTER -----------*/
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.redes-sociales {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.redes-sociales .icono {
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  background: #cbcbcb;
+  display: inline-block;
+  margin: 0px 20px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all .3s ease;
+}
+
+.redes-sociales .twitter {
+  background: #1da1f2;
+}
+
+.redes-sociales .instagram {
+  background: #833ab4;
+}
+
+.redes-sociales .facebook {
+  background: #3b5998;
+}
+
+
+/*********MEDIA QUERIES**********/
+
+@media screen and (max-width: 1199px) {
+  #title {
+    font-size: 70px;
+  }
+  .text {
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 991px) {}
+     figure img {
+    height: 600px;
+  }
+@media screen and (max-width: 767px) {
+  #monstereyes {
+    display: none;
+  }
+  figure img {
+    height: 400px;
+  }
+  #title {
+    font-size: 50px;
+  }
+  .text {
+    left: 80%;
+    top: 40%;
+  }
+  .services-container {
+  top: 20%;
+  padding: 20px 0;
+}
+
+.services-container h2 {
+  font-size: 50px;
+}
+
+.services figure img {
+  height: 200px;
+}
+
+.main .menu .categoria {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.main .menu .platillo {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.main .menu .nombre {
+  font-size: 15px;
+}
+
+.main .menu .precio {
+  font-size: 15px;
+}
+
+.main .menu .descripcion {
+  font-size: 10px;
+}
+
+
+}
+
+@media screen and (max-width: 575px) {
+   figure img {
+    height: 250px;
+  }
+  #title {
+    font-size: 30px;
+  }
+  .text {
+    left: 100%;
+    top: 30%;
+  }
+  .about-separator {
+  padding: 30px 0;
+}
+.main .menu .categoria {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.main .menu .nombre {
+  font-size: 10px;
+}
+
+.main .menu .precio {
+  font-size: 10px;
+}
+
+.main .menu .descripcion {
+  font-size: 7px;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+ figure img {
+    height: 150px;
+  }
+  #title {
+    font-size: 30px;
+  }
+
+  .text {
+    left: 125%;
+    top: 20%;
+  }
+  .about h2 {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main .menu .categoria {
+  font-size: 7px;
+  margin-bottom: 20px;
+}
+
+.main .menu .nombre {
+  font-size: 7px;
+}
+
+.main .menu .precio {
+  font-size: 7px;
+}
+
+.main .menu .descripcion {
+  font-size: 7px;
+}
+
+.gallery-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  font-size: 40px;
+}
+
+.contact {
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.contact h2 {
+  font-size: 40px;
+}
+
+
+footer p {
+  font-size: 10px;
+}
+
+.redes-sociales {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.redes-sociales .icono {
+  width: 60px;
+  height: 60px;
+  font-size: 15px;
+  line-height: 60px;
+}
+
+}

@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,600,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
 <body>
-
     <header>
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-static-top">
             <div class="container">
                 <!--Header Menu -->
                 <div class="navbar-header">
-                    <a href="#" class="navbar-brand">The Salon</a>
+                    <a href="#" class="navbar-brand">The Taqueria</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#btn-colapsar">
                         <span class="sr-only">Navegacion</span>
                         <span class="icon-bar"></span>
@@ -28,216 +29,224 @@
                 <!-- Menu Elements-->
                 <div class="collapse navbar-collapse" id="btn-colapsar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Inicio</a></li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Products <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Computadoras</a></li>
-                                <li><a href="#">Laptops</a></li>
-                                <li><a href="#">Cellphones</a></li>
-                                <li><a href="#">Drones</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
-                    <!-- search form -->
-                    <form action="" class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button type="submit" class="btn btn-default">Search</button>
-                        </div>
-                    </form>
-
                 </div>
             </div>
         </nav>
+        <figure>
+            <img src="img/recipe.jpg" alt="">
+        </figure>
     </header>
     <section class="main">
+        <div class="container-fluid">
+            <div id="title" class="text">
+                <p>Tacos are</p>
+                <p class="description">
+                    <span class="word wisteria">tasty.</span>
+                    <span class="word belize">wonderful.</span>
+                    <span class="word pomegranate">fancy.</span>
+                    <span class="word green">beautiful.</span>
+                    <span class="word midnight">cheap.</span>
+                </p>
+            </div>
+            <div id="monstereyes" class="eyes"></div>
+        </div>
+        <div class="about-separator"></div>
+        <div class="container-fluid about">
+            <h2>About Us</h2>
+        </div>
         <div class="container">
-            <!--slideshow-->
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="slider" class="carousel slide" data-ride="carousel">
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#slider" data-slide-to="0" class="active"></li>
-                            <li data-target="#slider" data-slide-to="1"></li>
-                            <li data-target="#slider" data-slide-to="2"></li>
-                        </ol>
-                        <!--slides conteiner-->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/s1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, amet voluptates id quam eius at quas et asperiores
+                architecto. Commodi aut repudiandae necessitatibus illum, maxime excepturi asperiores, laudantium doloremque
+                repellat laborum, odio, optio eaque ipsa. Laborum veniam in ratione! Minus culpa eos provident iure hic porro
+                voluptatibus laboriosam dolorum ratione?
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laboriosam sed esse illum aperiam non magnam ab
+                eum dolorum, beatae fugit placeat ea dignissimos eius iusto sunt accusantium. Maxime possimus dolore veritatis
+                rerum quaerat corporis nemo ipsum, aliquid placeat voluptatum.</p>
+        </div>
+        <div class="container-fluid services">
+            <div class="services-container">
+                <h2>Menu</h2>
+            </div>
+            <figure>
+                <img src="img/tacos-banner.jpg" alt="">
+            </figure>
+        </div>
+        <section class="menu container">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos"></h3>
+                <div class="contenedor-menu">
+                    <div class="contenedor-menu2">
+                        <article>
+                            <p class="categoria">Tacos</p>
+                            <div class="platillo">
+                                <p class="nombre">Al Pastor</p>
+                                <p class="precio">$5</p>
                             </div>
-                             <div class="item">
-                                <img src="img/s2.jpg" alt="">
+                            <div class="platillo">
+                                <p class="nombre">Carne Asada</p>
+                                <p class="precio">$7</p>
                             </div>
-                             <div class="item">
-                                <img src="img/s3.jpg" alt="">
+                            <div class="platillo">
+                                <p class="nombre">Chorizo</p>
+                                <p class="precio">$8</p>
                             </div>
-                        </div>
-                        <!--controls-->
-                        <a href="#slider" class="left carousel-control" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                         <a href="#slider" class="right carousel-control" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                            <div class="platillo">
+                                <p class="nombre">Chuleta</p>
+                                <p class="precio">$9</p>
+                            </div>
+                        </article>
+                        <article>
+                            <p class="categoria">Burritos</p>
+                            <div class="platillo">
+                                <p class="nombre">Rice and Beans</p>
+                                <p class="precio">$4</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Rice, beans and Tofu</p>
+                                <p class="precio">$5</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Chicken</p>
+                                <p class="precio">$7</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">All meats</p>
+                                <p class="precio">$10</p>
+                            </div>
+                        </article>
 
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="container">
+            <div class="row gallery-container">
+                <div class="page-header col-lg-12">
+                    <h2 class="text-center">Gallery</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <!--gallery-->
             <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h1 class="text-center">Gallery</h1>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="img/carne.jpg" alt="Iphone">
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/1.jpg" alt="">
+                            <img src="img/carne2.jpg" alt="Mac computer">
                         </a>
-                        <div class="caption">
-                            <h3>Iphone</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
-                 <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/2.jpg" alt="">
+                            <img src="img/carne3.jpg" alt="canon camera">
                         </a>
-                        <div class="caption">
-                            <h3>Mac</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
-                 <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/3.jpg" alt="">
+                            <img src="img/carne.jpg" alt="apple watch">
                         </a>
-                        <div class="caption">
-                            <h3>Canon</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
-                 <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/4.jpg" alt="">
+                            <img src="img/carne2.jpg" alt="keyboard">
                         </a>
-                        <div class="caption">
-                            <h3>Apple Watch</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
-                 <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/5.jpg" alt="">
+                            <img src="img/carne3.jpg" alt="ipad">
                         </a>
-                        <div class="caption">
-                            <h3>Keyboard</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
-                 <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/6.jpg" alt="">
+                            <img src="img/carne.jpg" alt="mcbook">
                         </a>
-                        <div class="caption">
-                            <h3>Ipad</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
-                 <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="img/7.jpg" alt="">
+                            <img src="img/carne2.jpg" alt="camera">
                         </a>
-                        <div class="caption">
-                            <h3>McBook</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <a href="#">
-                            <img src="img/8.jpg" alt="">
-                        </a>
-                        <div class="caption">
-                            <h3>Camera</h3>
-                            <p>Lorem</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">Shop</a>
-                                <a href="#" class="btn btn-default">Details</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+    <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <hr>
-                <p class="pull-left">The Salon
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </p>
-                <p class="pull-right">
-                <a href="#">Back to Top</a>
-                </p>
+            <div class="col-lg-12 contact">
+                <h2>Contact</h2>
             </div>
+        </div>
+    </div>
+    <main class="container">
+        <section class="location row">
+            <div class="col-sm-12 col-lg-6">
+                <h3 class="titulo col-lg-12">Location</h3>
+                <div class="address col-lg-6">
+                    <p class="calle">1055 Canada Place, Vancouver, B.C.</p>
+                    <p class="telefono">123-456-789</p>
+                    <p class="correo">conventioncenter [arroba] yahoo.com</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <h3 class="col-lg-12">Hours</h3>
+                <div class="hours col-lg-6">
+                    <p class="entre-semana">Monday to Friday <br> 8:00am - 5:00pm</p>
+                    <p class="fin-semana">Saturday and Sunday <br> Closed</p>
+                </div>
+            </div>
+        </section>
+        <section class="mapa row">
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3365.5654573969473!2d-117.05324938496379!3d32.484312706159606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1499928635089" width="1600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+            <iframe class="col-sm-8 col-md-10 col-lg-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10409.480775088174!2d-123.1121416!3d49.2883301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3c5f7bc5d72768d!2sVancouver+Convention+Centre+East!5e0!3m2!1sen!2sca!4v1520039531670"
+                width="60%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <!--<iframe class="col-sm-8 col-md-10 col-lg-12" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d107697.6986248959!2d-117.12251816790014!3d32.48464360548205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x14fb247961756ae9%3A0xee43e1c59707efe5!2szukky+cafe+tijuana!3m2!1d32.484663!2d-117.052478!5e0!3m2!1ses-419!2smx!4v1500337708708"
+                width="60%" height="70%" frameborder="0 " style="border:0 " allowfullscreen></iframe>-->
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="social-container row">
+            <!--Social Media -->
+            <div class="col-lg-12 redes-sociales justify-content-center" id="seccion3">
+                <div class="col-auto">
+                    <a href="#" class="icono icon-twitter twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icono icon-instagram instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icono icon-facebook facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <p>Copyright Tania Amparan @ 2018</p>
         </div>
     </footer>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
